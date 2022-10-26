@@ -53,6 +53,7 @@ const BillItem = ({ bill }) => {
         title={
           <>
             <CustomIcon
+              style={{color: '#ffda44'}}
               className={s.itemIcon}
               type={item.type_id ? typeMap[item.type_id].icon : 1}
             />

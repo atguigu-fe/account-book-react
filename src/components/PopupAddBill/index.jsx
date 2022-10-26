@@ -166,7 +166,7 @@ const PopupAddBill = forwardRef(({ detail = {}, onReload }, ref) => {
           {
             (payType == 'expense' ? expense : income).map(item => <div onClick={() => choseType(item)} key={item.id} className={s.typeItem}>
               <span className={cx({[s.iconfontWrap]: true, [s.expense]: payType == 'expense', [s.income]: payType == 'income', [s.active]: currentType.id == item.id})}>
-                <CustomIcon className={s.iconfont} type={typeMap[item.id].icon} />
+                <CustomIcon className={s.iconfont} type={typeMap[item.id].icon} style={{color: '#fff'}}/>
               </span>
               <span>{item.name}</span>
             </div>)

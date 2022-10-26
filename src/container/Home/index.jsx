@@ -127,7 +127,7 @@ const Home = () => {
         </Pull> : <Empty />
       }
     </div>
-    <div className={s.add} onClick={addToggle}><CustomIcon type='tianjia' /></div>
+    <div className={s.add} onClick={addToggle}><Icon type='add' style={{color: '#ffda44'}}/></div>
     <PopupType ref={typeRef} onSelect={select} />
     <PopupDate ref={monthRef} mode="month" onSelect={selectMonth} />
     <PopupAddBill ref={addRef} onReload={refreshData} />
