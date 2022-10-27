@@ -23,6 +23,9 @@ const UserInfo = () => {
     const { data } = await get('/api/user/get_userinfo');
     setUser(data);
     setAvatar(imgUrlTrans(data.avatar))
+    if (data.signature === '世界和平。') {
+      data.signature = '爱尚记账'
+    }
     setSignature(data.signature)
   };
 

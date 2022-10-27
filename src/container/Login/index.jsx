@@ -100,7 +100,7 @@ const Login = () => {
       {
         type == 'register' ? <div className={s.agree}>
           <Checkbox />
-          <label className="text-light">阅读并同意<a>《掘掘手札条款》</a></label>
+          <label className="text-light">阅读并同意<a>《条款》</a></label>
         </div> : null
       }
       <Button onClick={onSubmit} block theme="primary">{type == 'login' ? '登录' : '注册'}</Button>
